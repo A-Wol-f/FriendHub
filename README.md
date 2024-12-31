@@ -13,8 +13,8 @@ A full-stack application using Flask (Python) and React with Material UI, Postgr
 ### Backend Setup
 ```bash
 # Clone repository
-git clone [your-repo-url]
-cd [repo-name]/backend
+git clone https://github.com/AmIT0yAdAv/FriendHub
+cd FriendHub/backend
 
 # Create virtual environment
 python -m venv venv
@@ -30,7 +30,7 @@ pip install -r requirements.txt
 
 # Configure PostgreSQL
 # Set DATABASE_URL environment variable
-export DATABASE_URL="postgresql://username:password@localhost:5432/dbname"
+export DATABASE_URL="postgresql://example_user:securepassword@localhost:5432/friendhub"
 
 # Initialize database
 flask db upgrade
@@ -59,11 +59,10 @@ Visit `http://localhost:5000`
 
 ## Features
 - User management with PostgreSQL database
-- Material UI components for modern design
+- Instant feedback using Material UI's Snackbar system
 - Responsive layout for all devices
 - Light/Dark theme support
 - Real-time updates with optimistic UI
-- Production-ready configuration
 
 ## API Endpoints
 - `GET /api/friends`: Retrieve all friends
@@ -73,9 +72,9 @@ Visit `http://localhost:5000`
 
 ## Environment Variables
 ```
-DATABASE_URL=postgresql://username:password@localhost:5432/dbname
+DATABASE_URL=postgresql://example_user:securepassword@localhost:5432/friendhub
 FLASK_ENV=development
-SECRET_KEY=your-secret-key
+SECRET_KEY=supersecretkey123
 ```
 
 ## Deployment
@@ -83,11 +82,3 @@ SECRET_KEY=your-secret-key
 2. Connect GitHub repository
 3. Configure environment variables
 4. Deploy application
-   
-
-## Contributing
-1. Fork repository
-2. Create feature branch
-3. Commit changes
-4. Push to branch
-5. Open pull request
